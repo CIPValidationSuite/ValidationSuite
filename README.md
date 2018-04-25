@@ -5,10 +5,10 @@ Cahn-Ingold-Prelog (CIP) descriptor labelling implementations.
 
 Please Cite:
 
-	Robert M. Hanson, John W. Mayfield, Mikko J. Vainio, Andrey Yerin, 
-	Sophia Musacchio, and Dmitry Redkin. **Algorithmic analysis of 
-	Cahn-Ingold-Prelog rules of stereochemistry: Proposals for revised rules and
-	a guide for machine implementation** (Under Preparation)
+Robert M. Hanson, John W. Mayfield, Mikko J. Vainio, Andrey Yerin, 
+Sophia Musacchio, and Dmitry Redkin. **Algorithmic analysis of 
+Cahn-Ingold-Prelog rules of stereochemistry: Proposals for revised
+rules anda guide for machine implementation** (Under Preparation)
 
 ## Cahn-Ingold-Preglog Labels
 
@@ -54,13 +54,13 @@ indicates the number of atoms in the cumulated chain.
 For example penta-2,3-diene is TH3, hexa-2,3,4-triene
 is CT4.
 
-Helical and Atropisomeric geometires can not be stored
+Helical and Atropisomeric geometries can not be stored
 in SMILES.
 
 ## Rules
 
 Each entry contains the set of the CIP sequence rules
-required to get the recomended answer.
+required to get the recommended answer.
   
   '1a,2,5'  Requires Rule 1a, 2, and 5.
 
