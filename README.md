@@ -19,7 +19,7 @@ if you believe an assignment is incorrect.
 
 Each label is described as an atom number and a CIP descriptor label:
 
-	`<atom_num><label>`
+	<atom_num><label>
 
 A descriptor label is one of the following:
 	
@@ -28,13 +28,13 @@ A descriptor label is one of the following:
 Atom numbers start at 1 and reference the explicit atom storage order of the
 input format. For example in SMILES (R)-butan-2-ol would be labelled as:
 
-	`C[C@H](CC)O 2R` or `CC[C@H](C)O 3R`
+	C[C@H](CC)O 2R or CC[C@H](C)O 3R
 
 When a geometry that spans multiple atoms two and only two 'end' atoms are
 labelled.
 
-	`C/C=C/C 2E 3E`
-	`CC=[C@]=CC 2M 4M`
+	C/C=C/C 2E 3E
+	CC=[C@]=CC 2M 4M
 
 ## Geometry Key
 
