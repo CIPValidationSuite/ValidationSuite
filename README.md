@@ -40,14 +40,14 @@ labelled.
 
 Each entry lists the CIP geometries found.
 
-Symbol  Description             Example
-------  ----------------------- ----------------
-TH      Tetrahedral             (R)-butan-2-ol
-CT      CisTrans Double Bond    (Z)-but-2-ene
-AT      Atropisomeric           (M)-BiNAP
-HE      Helicicene              (M)-heptahelicene
-TH<num> Extended Tetrahedral    (M)-penta-2,3-diene
-CT<num> Extended CisTrans       (E)-hexa-2,3,4-triene
+|Symbol | Description           | Example                  |
+|-------|-----------------------|--------------------------|
+|TH     | Tetrahedral           | (R)-butan-2-ol           |
+|CT     | CisTrans Double Bond  | (Z)-but-2-ene            |
+|AT     | Atropisomeric         | (M)-BiNAP                |
+|HE     | Helicicene            | (M)-heptahelicene        |
+|TH<num>| Extended Tetrahedral  | (M)-penta-2,3-diene      |
+|CT<num>| Extended CisTrans     | (E)-hexa-2,3,4-triene    |
 
 For Extended Tetrahedral and CisTrans the '<num>'
 indicates the number of atoms in the cumulated chain.
