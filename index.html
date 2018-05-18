@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  			crossorigin="anonymous"></script>
+  	<style type="text/css">
+
+  	html, body {
+  		font-family: "Helvetica", "Arial";
+  		font-size:   9pt;
+  		background:  #ccc;
+  		color:       #333;
+  		margin:      0;
+  	}
+
+  	.example {  		
+  		vertical-align: middle;  		
+  		display:    inline-block;
+  		max-width:  350px;
+  		margin:     2px;
+  		background: #fff;
+  	}
+
+  	.img_box {
+  		width:  	350px;
+  		height: 	200px;
+  		max-width:  350px;
+  		max-height: 200px;
+  		line-height: 200px;
+  		text-align:  center;
+  	}
+
+  	.example div.img_box img {
+  		max-width:  100%;
+  		max-height: 100%;
+  		vertical-align: middle;
+  		display: inline-block;
+  	}
+
+  	.id {
+  		font-size: 14pt;
+  	}
+
+  	.smiles {
+  		font-family: "Courier", "Fixed Width";
+  		font-weight: bold;
+  		font-size:   8pt;
+  		overflow: hidden;
+    	text-overflow: ellipsis;
+    	white-space: nowrap;
+  	}
+
+  	table {
+  		border-collapse: collapse;
+  		max-width: 	     100%;
+  	}
+
+  	td {
+  		max-width: 260px;
+  	}
+
+  	th {
+  		text-align: left;
+  	}
+
+  	#controls {
+  		font-size: 16pt;
+  		height: 50px;
+  		line-height: 50px;
+  		vertical-align: middle;
+  	}
+
+  	#controls input {
+  		font-size: 16pt;
+  		width:     260px;
+  	}
+
+  	#grid {
+  		position: absolute;
+  		top:  50px;
+  		left: 0;
+  		right: 0;
+  		bottom: 0;
+  		overflow: scroll;
+  	}
+  	</style>
+</head>
+<body>
+<div id="controls">
+Filter: <input id="search" type="text" name="search" placeholder="VS001, Rule 6, TH, etc...">
+</div>
+<div id="grid">
+</div>
+<script type="text/javascript">
+var timer = null;
+$('#search').on('keyup', function(){
+	clearTimeout(timer);
+	timer = setTimeout(function(){
+		redraw()
+	}, 500);	
+});
+$(document).ready(function(){
+	redraw();
+})
+</script>
+</body>
+</html>
