@@ -83,8 +83,8 @@ var data = [
 {"id":"VS082","cip":"7R 8S","sunits":"TH","bbref":"P-92.2.1.3","srules":"1a","smiles":"C[C@H]1[C@H](CCCC1)C"},
 {"id":"VS083","cip":"14S","sunits":"TH","srules":"1a","smiles":"C#CCN1[C@@H](CCCC1)C2=CN=CC=C2"},
 {"id":"VS084","cip":"13R 15R","sunits":"TH","bbref":"P-93.5.4.1","srules":"1a","smiles":"C[C@@]12CC3=C(C[C@]1(CCCC2)[H])C=CC=C3"},
-{"id":"VS083","cip":"20S","sunits":"TH","srules":"1a","smiles":"O[C@@H](C(CCC1C=C1)(CCC2C=C2)CCC3C=C3)[C@@]45C=C[C@@](C=C4)(C=C5)[H]"},
-{"id":"VS085","cip":"5R 6R 7S 8S","sunits":"TH","bbref":"P-93.5.2.1","srules":"1a","smiles":"O1[C@@]2([C@@]3(CO[C@]([C@@]21[H])(O3)[H])[H])[H]"},
+{"id":"VS085","cip":"20S","sunits":"TH","srules":"1a","smiles":"O[C@@H](C(CCC1C=C1)(CCC2C=C2)CCC3C=C3)[C@@]45C=C[C@@](C=C4)(C=C5)[H]"},
+{"id":"VS086","cip":"5R 6R 7S 8S","sunits":"TH","bbref":"P-93.5.2.1","srules":"1a","smiles":"O1[C@@]2([C@@]3(CO[C@@]([C@@]21[H])([H])O3)[H])[H]"},
 {"id":"VS087","cip":"8E 9E","sunits":"CT","bbref":"P-93.5.1.4.2.1","srules":"1a","smiles":"ClC=1\\C(\\C=C2C1C=CC=C2)=C\\C"},
 {"id":"VS088","cip":"15P 18P","sunits":"AT","bbref":"P-93.5.7.1","srules":"1a","smiles":"[O-][N+](C1=C(C=2C(=CC=C(C2)OC)OC)C(=CC=C1)C(=O)O)=O"},
 {"id":"VS089","cip":"8E 9E 10E 11E 24S 26S","sunits":"CT,TH","bbref":"P-93.6","srules":"1a","smiles":"C[C@@H](C=1C=CC(\\C=C\\O/C=C/C=2C=CC(=CC2)[C@H](C)C(=O)O)=CC1)C(=O)O"},
@@ -286,7 +286,8 @@ var data = [
 {"id":"VS285","cip":"17R 18S 19S","sunits":"TH","bbref":"P-93 5.3.5","srules":"4c,6","smiles":"C1[C@@]2(CC[C@]3(C1)OCCC3)CC[C@@]4(CC2)CCCO4"},
 {"id":"VS286","cip":"7R 8R 9S","sunits":"TH","bbref":"P-93 5.3.5","srules":"4c,6","smiles":"Cl[C@H]1C[C@]2(C1)C[C@H](C2)Cl"},
 {"id":"VS287","cip":"6z 8z 9z 10z 11S","sunits":"CT,TH","srules":"5,6","smiles":"C/C=C\\1/C[C@]2(C\\C(\\C2)=C\\C)C1"},
-{"id":"VS288","cip":"28s 29S 30R","sunits":"TH","srules":"5,6","smiles":"O[C@H](C[C@@]12C=3CCC=C2CCC=C1CCC3)C[C@]45C=6CCC=C5CCC=C4CCC6"}];
+{"id":"VS288","cip":"28s 29S 30R","sunits":"TH","srules":"5,6","smiles":"O[C@H](C[C@@]12C=3CCC=C2CCC=C1CCC3)C[C@]45C=6CCC=C5CCC=C4CCC6"},
+];
 
 function and(left, right) {
 	return function(data) {
