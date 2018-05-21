@@ -26,19 +26,25 @@ A descriptor label is one of the following:
 	R, S, r, s, M, P, m, p, Z, or E	
 
 Atom numbers start at 1 and reference the explicit atom storage order of the
-input format. For example in SMILES (R)-butan-2-ol would be labelled as:
+input format. Explicit hydrogens are counted in this numbering but hydrogens 
+specified as an atom property '[C@H]' are not. For example in SMILES 
+(R)-butan-2-ol could be labelled as:
 
-	C[C@H](CC)O 2R or CC[C@H](C)O 3R
+	C[C@H](CC)O 2R
+	CC[C@H](C)O 3R
+	C[CH2][C@H](C)O 3R
+	CC([H])([H])[C@H](C)O 5R
 
-When a geometry that spans multiple atoms two and only two 'end' atoms are
+When a stereo unit spans multiple atoms two and only the two 'end' atoms are
 labelled.
 
 	C/C=C/C 2E 3E
 	CC=[C@]=CC 2M 4M
 
-## Geometry Key
+T
+## Stereo Units
 
-Each entry lists the CIP geometries found.
+Each entry lists the CIP stereo unit found.
 
 |Symbol   | Description           | Example                  |
 |---------|-----------------------|--------------------------|
@@ -54,7 +60,7 @@ indicates the number of atoms in the cumulated chain.
 For example penta-2,3-diene is TH3, hexa-2,3,4-triene
 is CT4.
 
-Helical and Atropisomeric geometries can not be stored
+Note Helicicene and Atropisomeric stereochemistry can not be stored
 in SMILES.
 
 ## Rules
@@ -66,32 +72,4 @@ required to get the recommended answer.
 
 ## Version History
 
-v1.0 2018-MM-DD
-	- Initial public release
-
-## John's TODO List
-
- - Renumber 'VS<num>' once final set is decided upon
- - Manually review 12 entries not support by CDK/Centres
- 		> MV116_070, AY236_207, MV64_053, AY236_033, AY236_032,
- 		  AY236_187, AY236_186, AY236_133, AY236_132, MV64_015,
- 		  AY236_135, AY236_134
- - Manually clean-up/rotate 2D layouts, in particular those
-   listed above 
-    > MV116_070, AY236_207, MV64_053, AY236_033, AY236_032,
- 		  AY236_187, AY236_186, AY236_133, AY236_132, MV64_015,
- 		  AY236_135, AY236_134
-   and 
- 		> BH64_081, AY236_188, AY236_189, MV64_068
- - Mark or remove planar chirality geometies? e.g. AY236_071
- 		> No supported/tested by us
- - Manually stereo in 2D/0D when not labelled. Due to the way the file was 
-   created additional markings should be added for example
-    > C[C@H](O)[C@](O)[C@H](C)O
-   instead of (currently)
-    > C[C@H](O)C(O)[C@H](C)O
- - Extra
- 	> Truncated titles in BH64_073/BH64_074
- 	> L_008 missing CIP label 2S
- 	> Updated AY236_179 labels
- 	> Fix mass numbers in BH64_079 and BH64_078
+ * v1.0 2018-05-20, **Initial public release**
