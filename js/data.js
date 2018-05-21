@@ -1,3 +1,4 @@
+var jsmol = "https://chemapps.stolaf.edu/jmol/jsmol/cip.htm?load=https://cipvalidationsuite.github.io/ValidationSuite/mol3d/";
 var data = [
 {"id":"VS001","sunits":"TH","bbref":"P-93.5.3.3","smiles":"C1[C@]2(CCCC1)CC=CC2"},
 {"id":"VS002","bbref":"P-93.5.1.4.1","smiles":"C1=CCC=CC=C1"},
@@ -341,9 +342,10 @@ function redraw() {
   	$example.append($("<div class='img_box'>").append($('<img>').attr('src', "img/" + data[i].id + ".svg")));
   	var $info = $("<table>").append(
   		$('<tr>').append($("<th>").addClass('id').append(data[i].id)),
-  		$('<tr>').append($("<th>").append("Download"))
+  		$('<tr>').append($("<th>").append("Links"))
   				 .append($("<td>").append($("<a>").attr('href', "mol2d/" + data[i].id + ".sdf").append("SDfile"), " (2D), ",
-  				 					      $("<a>").attr('href', "mol3d/" + data[i].id + ".sdf").append("SDfile"), " (3D)")),
+  				 					      $("<a>").attr('href', "mol3d/" + data[i].id + ".sdf").append("SDfile"), " (3D), ",
+  				 						  $("<a>").attr('href', jsmol + data[i].id + ".sdf").append("View 3D (JSmol)"))),
   		$('<tr>').append($("<th>").append("SMILES"))
   				 .append($("<td>").addClass('smiles').append(data[i].smiles)),
   		$('<tr>').append($("<th>").append("Units"))
