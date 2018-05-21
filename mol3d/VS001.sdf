@@ -1,5 +1,5 @@
 VS001
-  CDK     05181815223D
+  CDK     05211813133D
 
  26 27  0  0  1  0  0  0  0  0999 V2000
    -2.7007   -1.0965   -0.5944 C   0  0  2  0  0  0  0  0  0  0  0  0
@@ -59,14 +59,8 @@ M  END
 > <STRUCTURE_ID>
 VS001
 
-> <CIP_LABELS>
-
-
 > <BLUE_BOOK_REF>
 P-93.5.3.3
-
-> <SEQUENCE_RULES>
-
 
 > <STEREOGENIC_UNITS>
 TH

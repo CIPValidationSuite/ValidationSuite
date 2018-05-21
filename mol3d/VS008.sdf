@@ -1,5 +1,5 @@
 VS008
-  CDK     05181815223D
+  CDK     05211813133D
 
  16 17  0  0  1  0  0  0  0  0999 V2000
     0.6692   -1.0355   -1.0595 C   0  0  2  0  0  0  0  0  0  0  0  0
@@ -39,14 +39,8 @@ M  END
 > <STRUCTURE_ID>
 VS008
 
-> <CIP_LABELS>
-
-
 > <BLUE_BOOK_REF>
 P-93.5.2.3
-
-> <SEQUENCE_RULES>
-
 
 > <STEREOGENIC_UNITS>
 TH
