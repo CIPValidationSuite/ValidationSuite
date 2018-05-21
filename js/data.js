@@ -341,8 +341,8 @@ function redraw() {
   	var $info = $("<table>").append(
   		$('<tr>').append($("<th>").addClass('id').append(data[i].id)),
   		$('<tr>').append($("<th>").append("Download"))
-  				 .append($("<td>").append($("<a>").attr('href', "mol2d/" + data[i].id + ".mol").append("molfile"), " (2D), ",
-  				 					      $("<a>").attr('href', "mol3d/" + data[i].id + ".mol").append("molfile"), " (3D)")),
+  				 .append($("<td>").append($("<a>").attr('href', "mol2d/" + data[i].id + ".sdf").append("SDfile"), " (2D), ",
+  				 					      $("<a>").attr('href', "mol3d/" + data[i].id + ".sdf").append("SDfile"), " (3D)")),
   		$('<tr>').append($("<th>").append("SMILES"))
   				 .append($("<td>").addClass('smiles').append(data[i].smiles)),
   		$('<tr>').append($("<th>").append("Units"))
