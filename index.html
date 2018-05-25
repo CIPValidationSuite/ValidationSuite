@@ -91,6 +91,8 @@
 <div id="controls">
 Filter: <input id="search" type="text" name="search" placeholder="VS001, Rule 6, TH, etc...">
 &nbsp;
+<a href="javascript:$('#search').val('');redraw();">Show All</a>
+&nbsp;
 Download:
 <a href="https://github.com/CIPValidationSuite/ValidationSuite/raw/master/compounds.smi">compounds.smi</a>
 <a href="https://github.com/CIPValidationSuite/ValidationSuite/raw/master/compounds_2d.sdf">compounds_2d.sdf</a>
@@ -107,7 +109,10 @@ $('#search').on('keyup', function(){
 	}, 500);	
 });
 $(document).ready(function(){
-	redraw();
+  if (document.location.search) {
+    $("#search").val(decodeURIComponent(document.location.search.split("search=")[1]))
+  }
+  redraw();
 })
 </script>
 </body>
