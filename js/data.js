@@ -351,13 +351,14 @@ function redraw() {
   	if (!filter(data[i]))
   		continue;
   	var $example = $('<div class="example">');
+	$example.attr('id', data[i].id);
   	$example.append($("<div class='img_box'>").append($('<img>').attr('src', "img/" + data[i].id + ".svg")));
   	var $info = $("<table>").append(
   		$('<tr>').append($("<th>").addClass('id').append(data[i].id)),
   		$('<tr>').append($("<th>").append("Links"))
   				 .append($("<td>").append($("<a>").attr('href', "mol2d/" + data[i].id + ".sdf").append("SDfile"), " (2D), ",
   				 					      $("<a>").attr('href', "mol3d/" + data[i].id + ".sdf").append("SDfile"), " (3D), ",
-  				 						  $("<a>").attr('href', jsmol + data[i].id + ".sdf").append("View 3D (JSmol)"))),
+							                      $("<a>").attr('target', '_blank').attr('href', jsmol + data[i].id + ".sdf").append("View 3D (JSmol)"))),
   		$('<tr>').append($("<th>").append("SMILES"))
   				 .append($("<td>").addClass('smiles').append(data[i].smiles)),
   		$('<tr>').append($("<th>").append("Units"))
