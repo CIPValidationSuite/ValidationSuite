@@ -315,12 +315,23 @@ function redraw() {
   var terms = $('#search').val().split(",");
   for (var i=0; i < terms.length; i++) {
   	var term = terms[i].trim().toUpperCase();
-  	console.log(term);
-  	if (term.startsWith("VS")) {
-  		filter = and(filter, function(data){
-  			return data.id.startsWith(term);
-  		});
-  	}
+	if (term.startsWith("VS")) {
+	    var vslist = [];
+	    var vs = term.substring(2).split("+");
+	    for (var t = vs.length; --t >= 0;) {
+		if (vs[t].indexOf("-") > 0) {
+		    var span = vs.splice(t,1)[0].split("-");
+		    var n1 = parseInt(span[0])
+			var n2 = parseInt(span[1])
+			if (!isNaN(n1) && !isNaN(n2) && n1 <= n2)
+			    for (var k = n1; k <= n2; k++)
+				vslist[k] = 1;
+		} else {
+		    vslist[parseInt(vs[t])] = 1;
+		}
+	    }
+	    filter = and(filter, function(data){ return vslist[parseInt(data.id.substring(2))]; });
+	}
   	if (term.startsWith("RULE")) {
   		var rule = term.split(" ")[1].toLowerCase();
   		filter = and(filter, (function(rule) {
