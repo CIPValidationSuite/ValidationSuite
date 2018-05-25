@@ -3,6 +3,8 @@
 These files provide a collection for chemical structures for validating 
 Cahn-Ingold-Prelog (CIP) descriptor labelling implementations.
 
+## Click [here](https://cipvalidationsuite.github.io/ValidationSuite/) to browse the structures
+
 Please Cite:
 
 Robert M. Hanson, John W. Mayfield, Mikko J. Vainio, Andrey Yerin, 
