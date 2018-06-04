@@ -77,7 +77,7 @@ var data = [
 {"id":"VS075","cip":"10R 11S 12S 13S 14R","sunits":"TH","bbref":"P-93.5.2.1","srules":"1a","smiles":"O[C@@H]1[C@]2(C[C@H](C[C@@]([C@H](CC1)OC)(O2)[H])I)[H]"},
 {"id":"VS076","cip":"4R","sunits":"TH","srules":"1a","smiles":"Cl[C@@H](O)C"},
 {"id":"VS077","cip":"4S","sunits":"TH","srules":"1a","smiles":"Cl[C@H](O)C"},
-{"id":"VS078","cip":"27P 28P 44R","sunits":"TH,TH3","bbref":"P-93.5.2.3","srules":"1a","smiles":"C1CCCCCCCCCCCCCCCCCCCC[C@@]2(CCCCCCCCCCCCCCCCCCCC(=[C@@]=C1[H])C2)[H]"},
+{"id":"VS078","cip":"27P 28P 44R","sunits":"TH,TH3","bbref":"P-93.5.2.3","srules":"1a","smiles":"C1CCCCCCCCCCCCCCCCCCCC[C@@]2(CCCCCCCCCCCCCCCCCCCC(=[C@]=C1[H])C2)[H]"},
 {"id":"VS079","cip":"4M 5M","sunits":"TH3","bbref":"P-93.4.2","srules":"1a","smiles":"ClC(=[C@@]=C(Cl)[H])[H]"},
 {"id":"VS080","cip":"7R 8S","sunits":"TH","bbref":"P-92.2.1.3","srules":"1a","smiles":"C[C@H]1[C@H](CCCC1)C"},
 {"id":"VS081","cip":"14S","sunits":"TH","srules":"1a","smiles":"C#CCN1[C@@H](CCCC1)C2=CN=CC=C2"},
