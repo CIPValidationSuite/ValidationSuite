@@ -377,7 +377,7 @@ function redraw() {
   		$('<tr>').append($("<th>").append("Rules"))
   				 .append($("<td>").append(data[i].srules)),
   		$('<tr>').append($("<th>").append("BlueBook"))
-  				 .append($("<td>").append(data[i].bbref)),
+  				 .append($("<td>").append(data[i].bbref))
   		);
   	$example.append($info);
   	$grid.append($example);
