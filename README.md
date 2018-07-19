@@ -1,6 +1,6 @@
 # Validation Suite for Cahn-Ingold-Prelog (CIP) descritpors
 
-These files provide a collection for chemical structures for validating 
+These files provide a collection of chemical structures for validating 
 Cahn-Ingold-Prelog (CIP) descriptor labelling implementations.
 
 ## Click [here](https://cipvalidationsuite.github.io/ValidationSuite/) to browse the structures
