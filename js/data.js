@@ -296,8 +296,8 @@ var data = [
 {"id":"VS294","cip":"9S 10R 11R 12S 13R","sunits":"TH","srules":"1a,6","smiles":"O[C@H]1O[C@@]2(O[C@H]1O)O[C@H]([C@H](O2)O)O"},
 {"id":"VS295","cip":"9S 10R 11S 12R 13S","sunits":"TH","srules":"1a,6","smiles":"O[C@H]1O[C@@]2(O[C@H]1O)O[C@@H]([C@@H](O2)O)O"},
 {"id":"VS296","cip":"19S 20S 21S","sunits":"TH","srules":"4c,6","smiles":"C1[C@@]2(OCCC1)CC[C@]3(CC2)CC[C@@]4(CC3)OCCCC4"},
-{"id":"VS297","cip":"17R 18S 19S","sunits":"TH","bbref":"P-93 5.3.5","srules":"4c,6","smiles":"C1[C@@]2(CC[C@]3(C1)OCCC3)CC[C@@]4(CC2)CCCO4"},
-{"id":"VS298","cip":"7R 8R 9S","sunits":"TH","bbref":"P-93 5.3.5","srules":"4c,6","smiles":"Cl[C@H]1C[C@]2(C1)C[C@H](C2)Cl"},
+{"id":"VS297","cip":"17R 18S 19S","sunits":"TH","bbref":"P-93.5.3.5","srules":"4c,6","smiles":"C1[C@@]2(CC[C@]3(C1)OCCC3)CC[C@@]4(CC2)CCCO4"},
+{"id":"VS298","cip":"7R 8R 9S","sunits":"TH","bbref":"P-93.5.3.5","srules":"4c,6","smiles":"Cl[C@H]1C[C@]2(C1)C[C@H](C2)Cl"},
 {"id":"VS299","cip":"6z 8z 9z 10z 11S","sunits":"CT,TH","srules":"5,6","smiles":"C/C=C\\1/C[C@]2(C\\C(\\C2)=C\\C)C1"},
 {"id":"VS300","cip":"28s 29S 30R","sunits":"TH","srules":"5,6","smiles":"O[C@H](C[C@@]12C=3CCC=C2CCC=C1CCC3)C[C@]45C=6CCC=C5CCC=C4CCC6"}
 ];
