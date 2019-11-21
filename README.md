@@ -8,9 +8,10 @@ Cahn-Ingold-Prelog (CIP) descriptor labelling implementations.
 Please Cite:
 
 Robert M. Hanson, John W. Mayfield, Mikko J. Vainio, Andrey Yerin, 
-Sophia Musacchio, and Dmitry Redkin. **Algorithmic analysis of 
+Sophia Musacchio, and Dmitry Redkin. (2018). **Algorithmic analysis of 
 Cahn-Ingold-Prelog rules of stereochemistry: Proposals for revised
-rules anda guide for machine implementation** (Under Preparation)
+rules and a guide for machine implementation** Journal of Chemical Information
+and Modeling. 58. 10.1021/acs.jcim.8b00324. 
 
 ## Cahn-Ingold-Preglog Labels
 
